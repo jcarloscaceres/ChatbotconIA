@@ -1,0 +1,44 @@
+/* Estilo global para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Fuente para todo el cuerpo del documento */
+}
+
+/* Estilos para el contenedor principal del chat */
+.chat-container {
+    width: 500px; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+/* Estilos para el título del chatbot */
+.titulo{
+    text-align: center; /* Centrar el texto del título */
+}
+
+/* Estilos para el área donde se mostrarán los mensajes del chat */
+#chat-display {
+    border: 1px solid #ccc; /* Borde del área de mensajes */
+    padding: 10px; /* Espaciado interno */
+    height: 400px; /* Altura máxima del área */
+    overflow-y: scroll; /* Agregar desplazamiento vertical si los mensajes exceden la altura */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilos para el contenedor del campo de entrada */
+.input-container {
+    display: flex; /* Utilizar el modelo de diseño flexible */
+}
+
+/* Estilos para el campo de entrada de texto del usuario */
+#user-input {
+    flex: 1; /* Ocupar todo el espacio restante en el contenedor */
+    padding: 5px; /* Espaciado interno */
+}
+
+/* Estilos para el botón de enviar */
+#send-btn {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}

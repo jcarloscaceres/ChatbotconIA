@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Definicion del titulo de la pagina-->
+    <title>Chatbot Sencillo</title>
+
+    <!--Enlace al archivo CSS para los estilos de la pagina, se hace mediante esta URL para que Flask lo renderice-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+   
+</head>
+<body>
+    
+    <!--Contenedor principal del chatbot-->
+    <div class="chat-container">
+        <!--Titulo del chatbot-->
+        <h1 class="titulo">Mi chatbot simple con IA</h1>
+        <!--Area donde se muestran los mensajes del chat-->
+        <div id="chat-display"></div>
+        <!--Contenedor del campo de entrada-->
+        <div class="input-container">
+            <!--Campo de entrada de texto para el usuario-->
+            <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+            <!--Boton para enviar el mensaje-->
+            <button id="send-btn">Enviar</button>
+        </div>
+        <h6>Aplicacion de chatBot libre de copyright: Por Juan Carlos Cáceres</h6>
+    </div>
+
+   <!--Enlace para el archivo javaScript para la funcionalidad del chat-->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
